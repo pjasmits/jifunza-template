@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.5" type="template" method="upgrade">
+	<name>Jifunza Template</name>
+	<creationDate>11-06-2017</creationDate>
+	<author>Patrick Smits</author>
+	<copyright>Copyright © 2017 byAntoinette Communicatie</copyright>
+	<authorEmail>patrick@byantoinette.nl</authorEmail>
+	<authorUrl>https://www.byantoinettecommunicatie.nl</authorUrl>
+	<version>Stable 2.1.0</version>
+	<description><![CDATA[ 
+<link href="../templates/jifunzatemplate/css/backend.css" rel="stylesheet" type="text/css" media="all" />
+<p></p>
+<img src="../templates/jifunzatemplate/images/Logo_Jifunza_Template_Big.png" border="0" title="" alt=""/>
+<p></p>
+
+<br>
+
+		<p>Created by <a href="http://www.byantoinettecommunicatie.nl" target="_blank">Patrick Smits, ByAntoinette Communicatie.</a> <br> Joomla is the anglicised spelling of the Swahili word <b>jumla</b> meaning <b>all together</b> or <b>as a whole</b>. <br> As an gesture to Joomla byAntoinette Communicatie developed a template called <b>Jifunza</b>. It's the Swahili name for <b>Learning</b>.<br>
+<br>
+The template uses a SASS compiler.
+<br>
+<br>
+ <table border="0" width="100%">
+<td width="7%">Version:</td>
+		    <td width="80%">2.1.0</td>
+	    </tr>
+		    <tr>
+		    <td width="7%">Date:</td>
+		    <td width="80%">11-06-2017</td>
+	    </tr>
+		 <tr>
+		    <td width="7%">Developer:</td>
+		    <td width="80%"><a href="https://www.byantoinettecommunicatie.nl" target="_blank">Patrick Smits, ByAntoinette Communicatie</a></td></p>
+</table>
+<br>
+<br>
+	]]></description>
+	<files>
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>includes</folder>
+        <folder>framework</folder>
+		<folder>js</folder>
+		<folder>scss</folder>
+        <folder>language</folder>
+		<folder>vendor</folder>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>index.php</filename>
+		<filename>offline.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+    <positions>
+        <position>mobilemenu</position>
+                <position>searchbox</position>
+        <position>top</position>
+        <position>top2</position>
+                <position>header</position>
+        <position>content-above1</position>
+        <position>content-above2</position>
+        <position>content-above3</position>
+        <position>content-above4</position>
+        <position>navigation</position>
+        <position>left</position>
+        <position>right</position>
+        <position>content-top</position>
+        <position>content-bottom</position>
+        <position>content-below1</position>
+        <position>content-below2</position>
+        <position>content-below3</position>
+        <position>content-below4</position>
+        <position>footer</position>
+              <position>footer2</position>
+
+	</positions>
+    
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+                <!-- Grootte wrapper -->
+                <field name="Wrapper" 
+                        class="" 
+                        type="text" 
+                        default="70%"
+					    label="Wrapper"
+                        description="Breedte buitenste Wrapper" />
+                
+                <!-- Grootte main -->
+                <field name="Main" 
+                        class="" 
+                        type="text" 
+                        default="70%"
+					    label="Main"
+                        description="Breedte binnenste Main" />
+
+                                <!-- Grootte header -->
+                <field name="header" 
+                        class="" 
+                        type="text" 
+                        default="100%"
+					    label="header"
+                        description="Breedte header" />
+                
+                <!-- Grootte navigation -->
+                <field name="Navigation" 
+                        class="" 
+                        type="text" 
+                        default="100%"
+					    label="Navigation"
+                        description="Breedte binnenste Navigation" />
+                
+                <!-- Grootte footer -->
+                <field name="Footer" 
+                        class="" 
+                        type="text" 
+                        default="100%"
+					    label="Footer"
+                        description="Breedte footer" />
+                
+
+                
+                <!-- Linker kolom -->
+				<field name="leftColumnWidth" type="text" default="col-md-3" label="Linker kolom breedte" description="Kies de breedte voor de linker kolom">
+				</field>
+                <!-- Content kolom -->
+				<field name="Content" type="text" default="col-md-3" label="Content kolom breedte" description="Kies de breedte voor de rechter kolom">
+				</field>
+                <!-- Rechter kolom -->
+				<field name="rightColumnWidth" type="text" default="col-md-3" label="Rechter kolom breedte" description="Kies de breedte voor de rechter kolom">
+				</field>
+                
+				<!-- Artikelen op frontpagina -->              
+				<field name="frontpageshow" 
+                       type="radio" 
+                       class="btn-group" 
+                       default="1" 
+                       label="Artikelen op frontpagina" 
+                       description="Wel of geen artikelen op de frontpagina">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+                
+				<!-- MODERNIZR-->
+				<field name="modernizr" 
+                       type="radio" 
+                       class="btn-group" 
+                       default="0"
+					   label="Modernizr"
+					   description="Enable JavaScript modernizr.js in head">
+					       <option value="1">JYES</option>
+					       <option value="0">JNO</option>
+				</field>
+                
+				<!-- FONT-AWESOME -->
+				<field name="fontawesome" 
+                       type="radio" 
+                       class="btn-group" 
+                       default="0"
+					   label="Font Awesome"
+					   description="Wel of geen Font Awesome voor icons in Bootstrap">
+					       <option value="1">JYES</option>
+					       <option value="0">JNO</option>
+				</field>
+                
+				<!-- PIE-->
+				<field name="pie" 
+                       type="radio" 
+                       class="btn-group" 
+                       default="0"
+					   label="PIE"
+					   description="Stel PIE in (CSS3 for IE 9+8)">
+					       <option value="1">JYES</option>
+					       <option value="0">JNO</option>
+				</field>
+                
+				<!-- MATERIAL DESIGN-->
+				<field name="materialdesign" 
+                       type="radio" 
+                       class="btn-group" 
+                       default="0"
+					   label="Material Design"
+					   description="Stel Material Design in">
+					       <option value="1">JYES</option>
+					       <option value="0">JNO</option>
+				</field>
+                
+				<!-- SASS-->
+				<field name="compile_sass" 
+                       type="radio" 
+                       class="btn-group" 
+                       default="0"
+					   label="Compileren van Sass"
+					   description="Wil je Sass compileren?">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+                
+                <field name="message" 
+                       type="radio" 
+                       class="btn-group" 
+                       default="1" 
+                       label="Compiler message" 
+                       description="Message van Sass compiler">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+                
+			</fieldset>
+
+            <fieldset name="gener_par" label="Top en Bottom">
+<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt; Template &lt;/div&gt;" />
+                <field name="Above1" type="text" default="col-md-3" label="Above 1 breedte" description="Kies de breedte voor Above 1">
+				</field>
+				<field name="Above2" type="text" default="col-md-3" label="Above 2 breedte" description="Kies de breedte voor Above 2">
+				</field>
+				<field name="Above3" type="text" default="col-md-3" label="Above 3 breedte" description="Kies de breedte voor Above 3">
+				</field>
+                <field name="Above4" type="text" default="col-md-3" label="Above 4 breedte" description="Kies de breedte voor Above 4">
+				</field>
+                <field name="Below1" type="text" default="col-md-3" label="Below 1 breedte" description="Kies de breedte voor Below 1">
+				</field>
+                <!-- Content kolom -->
+				<field name="Below2" type="text" default="col-md-3" label="Below 2 breedte" description="Kies de breedte voor Below 2">
+				</field>
+                <!-- Rechter kolom -->
+				<field name="Below3" type="text" default="col-md-3" label="Below 3 breedte" description="Kies de breedte voor Below 3">
+				</field>
+                <field name="Below4" type="text" default="col-md-3" label="Below 4 breedte" description="Kies de breedte voor Below 4">
+				</field>
+            </fieldset>
+            <fieldset name="gener_par" label="Basis">
+<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt; Template &lt;/div&gt;" />
+
+                <!-- Externe link google fonts -->
+                 <field name="GoogleFont1" 
+                        class="" 
+                        type="text" 
+                        default="https://fonts.googleapis.com/css?family=Open+Sans:400,700"
+					    label="Externe link naar Google font 1"
+                        description="Externe link naar Google font 1" />
+
+                <!-- Externe link google fonts -->
+                 <field name="GoogleFont2" 
+                        class="" 
+                        type="text" 
+                        default="https://fonts.googleapis.com/css?family=Slabo+27px"
+					    label="Externe link naar Google font 2"
+                        description="Externe link naar Google font 2" />              
+
+                <!-- Template kleur van de Achtergrond -->                
+				<field name="templateBackgroundColor" 
+                       class="field" 
+                       type="color" 
+                       default="#FFFFFFF"
+					   label="Achtergrondkleur"
+					   description="Achtergrondkleur van de template" />
+
+
+            </fieldset>
+
+<!-- end GENERAL -->
+            
+<!-- begin TEXT -->
+
+            <fieldset name="Tekst" label="Tekst" addfieldpath="/plugins/system/jifunza/fields">
+
+<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt; Paragraph &lt;/div&gt;" />
+
+                <field name="p" 
+                       class="field" 
+                       type="color" 
+                       default="#000000"
+					   label="Kleur van de tekst P"
+					   description="Kleur van de tekst P" />
+ 
+                <field  name="ap_font" 
+                        class="" 
+                        type="text" 
+                        default=""
+					    label="Font a en p"
+					    description="Font Familie van a en p"/>
+                
+                <field name="FontSizeP" 
+                       class="" 
+                       type="text" 
+                       default="10px"
+					   label="Lettergrootte"
+                       description="Lettergrootte van de stijl P" /> 
+
+                <field  name="Para_margin"
+				        type="text"
+				        default="0 0 10px 0"
+				        label="Margin P"
+				        description="top - right - bottom - left" />
+                
+                <field  name="Para_link"
+				        type="text"
+				        default="#e55666"
+				        label="Kleur link P"
+				        description="Kleur van link in P" />
+                
+                
+                <field  name="Para_link-hover"
+				        type="text"
+				        default="#e3e3e3"
+				        label="Kleur link hover P"
+				        description="Kleur van de hover in P" />
+
+<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt; Heading 1 &lt;/div&gt;" />
+                
+                <field  name="ColorH1" 
+                        class="field" 
+                        type="color" 
+                        default="#08C"
+					    label="kleur H1"
+					    description="Kleur van Heading 1" /> 
+                
+                 <field name="FontSizeH1" 
+                        class="" 
+                        type="text" 
+                        default="10px"
+                        label="Fontsize H1"
+                        description="Lettergrootte van Heading 1" /> 
+                
+                <field  name="h1_font" 
+                        class="" 
+                        type="text" 
+                        default=""
+					    label="Font H1"
+					    description="Font Familie van Heading 1"/>
+                
+                <field name="h1_weight" 
+                       class="" 
+                       type="text" 
+                       default=""
+					   label="Gewicht H1"
+					   description="Gewicht van Heading 1"/>
+                
+                <field  name="margin_h1"
+				        type="text"
+				        default="0 0 10px 0"
+				        label="Margin H1"
+				        description="top - right - bottom - left" />
+   
+<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt; Heading 2 &lt;/div&gt;" />
+                
+              <field name="ColorH2" 
+                     class="field" 
+                     type="color" 
+                     default="#08C"
+					 label="kleur H2"
+					 description="Kleur van Heading 2" /> 
+                
+      
+                <field  name="FontSizeH2" 
+                        class="" type="text" 
+                        default="10px"
+					    label="Fontsize H2"
+                        description="Lettergrootte van Heading 2" /> 
+                
+                <field  name="h2_font" 
+                        class="" 
+                        type="text" 
+                        default=""
+					    label="Font H2"
+					    description="Font Familie van Heading 2" />
+                
+                <field  name="h2_weight"
+                        class=""
+                        type="text" 
+                        default=""
+				        label="Gewicht H2"
+				        description="Gewicht van Heading 2" />
+                    
+                <field  name="margin_h2"
+				        type="text"
+				        default="0 0 10px 0"
+				        label="Margin H2"
+				        description="top - right - bottom - left" />
+   
+<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt; Heading 3 &lt;/div&gt;" />
+
+                <field  name="ColorH3" 
+                        class="field" 
+                        type="color" 
+                        default="#08C"
+					    label="kleur H3"
+                        description="Kleur van Heading 3" /> 
+                
+      
+                 <field name="FontSizeH3" 
+                        class="" 
+                        type="text" 
+                        default="10px"
+					    label="Fontsize H3"
+                        description="Lettergrootte van Heading 3" /> 
+                
+                <field  name="h3_font" 
+                        class="" 
+                        type="text" 
+                        default=""
+					    label="Font H3"
+					    description="Font Familie van Heading 3" />
+                
+                <field  name="h3_weight" 
+                        class="" 
+                        type="text" 
+                        default=""
+					    label="Gewicht H3"
+					    description="Gewicht van Heading 3" />
+
+                <field  name="margin_h3"
+				        type="text"
+				        default="0 0 10px 0"
+				        label="Margin H3"
+				        description="top - right - bottom - left" />
+                
+<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt; Heading 4 &lt;/div&gt;" />
+
+                <field  name="ColorH4" 
+                        class="field" 
+                        type="color" 
+                        default="#08C"
+					    label="kleur H4"
+					    description="Kleur van Heading 4" /> 
+            
+                <field  name="FontSizeH4" 
+                        class="" 
+                        type="text" 
+                        default="10px"
+					    label="Fontsize H4"
+                        description="Lettergrootte van Heading 4" /> 
+                
+                <field  name="h4_font" 
+                        class="" 
+                        type="text" 
+                        default=""
+					    label="Font H4"
+					    description="Font Familie van Heading 4" />
+                
+                <field  name="h4_weight" 
+                        class="" 
+                        type="text" 
+                        default=""
+					    label="Gewicht H4"
+					    description="Gewicht van Heading 4" />
+                                    
+                <field  name="margin_h4"
+                        type="text"
+                        default="0 0 10px 0"
+                        label="Margin H4"
+                        description="top - right - bottom - left" />
+            
+   
+<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt; Heading 5 &lt;/div&gt;" />
+
+                <field  name="ColorH5" 
+                        class="field" 
+                        type="color" 
+                        default="#08C"
+                        label="kleur H5"
+                        description="Kleur van Heading 5" /> 
+
+                <field  name="FontSizeH5" 
+                        class="" 
+                        type="text" 
+                        default="10px"
+					    label="Fontsize H5"
+                        description="Lettergrootte van Heading 5" /> 
+                
+                <field  name="h5_font" 
+                        class="" 
+                        type="text" 
+                        default=""
+					    label="Font H5"
+					    description="Font Familie van Heading 5" />
+              
+                
+                <field  name="h5_weight" 
+                        class="" 
+                        type="text" 
+                        default=""
+					    label="Gewicht H5"
+					    description="Gewicht van Heading 5" />
+                
+                <field  name="margin_h5"
+				        type="text"
+                        default="0 0 10px 0"
+                        label="Margin H5"
+				        description="top - right - bottom - left" />
+                   
+
+<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt; Heading 6 &lt;/div&gt;" />
+      
+                <field  name="ColorH6" 
+                        class="field" 
+                        type="color" 
+                        default="#08C"
+					    label="kleur H6"
+				        description="Kleur van Heading 6" /> 
+                
+      
+                <field  name="FontSizeH6" 
+                        class="" 
+                        type="text" 
+                        default="10px"
+					    label="Fontsize H6"
+                        description="Lettergrootte van Heading 6" /> 
+                
+                <field  name="h6_font" 
+                        class="" 
+                        type="text" 
+                        default=""
+					    label="Font H6"
+					    description="Font Familie van Heading 6" />
+                              
+            <field      name="h6_weight" 
+                        class="" 
+                        type="text" 
+                        default=""
+					    label="Gewicht H6"
+				        description="Gewicht van Heading 6" />                 
+                
+            <field      name="margin_h6"
+                        type="text"
+				        default="0 0 10px 0"
+				        label="Margin H6"
+				        description="top - right - bottom - left" />
+
+</fieldset>
+
+   
+<!-- end TEXT -->
+
+<!-- begin FOOTER -->
+
+            <fieldset name="Footer" label="Footer"> 
+                
+                <field name="FooterColor" class="" type="color" default="#000000"
+					label="Achtergrondkleur Footer"
+					description="De achtergrondkleur van de footer" /> 
+                
+                <field name="FontSizeFooter" class="" type="text" default="10px"
+					label="Lettergrootte"
+					description="Lettergrootte van de tekst in de Footer" />
+                
+            <field name="FooterHeight" class="" type="text" default="10px"
+					label="Footer hoogte"
+					description="Hoogte van de Footer" />
+                
+                
+                <field name="ColorFooterText" class="" type="color" default="#3f3f3f"
+					label="Footer Tekstkleur"
+					description="Kleur van de tekst in de Footer" />
+			</fieldset>
+            
+<!-- end FOOTER -->
+
+<!-- begin MENU -->
+
+            <fieldset name="Menu" label="Menu"> 
+                
+                <field name="BgColorMenu" 
+                       class="" 
+                       type="color" 
+                       default="gray"
+					   label="Achtergrondkleur Menu"
+					   description="Kleur van de achtergrond van het menu" /> 
+            
+                <field name="FontColorMenu" 
+                       class="" 
+                       type="color" 
+                       default="#000000"
+					   label="Kleur Inactief Menu"
+					   description="Kleur Inactief Menu" /> 
+
+                <field name="BackgroundColorMenu" 
+                       class="" 
+                       type="color" 
+                       default="#ffffff"
+					   label="Achtergrondkleur Inactief Menu"
+					   description="Kleur van de achtergrond van het inactieve menu" /> 
+                
+                <field name="FontColorActiveMenu" 
+                       class="" 
+                       type="color" 
+                       default="gray"
+					   label="Kleur actief Menu"
+					   description="Kleur actief Menu" /> 
+
+                <field name="BgColorActiveMenu" 
+                       class="" 
+                       type="color" 
+                       default="#ffffff"
+					   label="Achtergrondkleur actief Menu"
+					   description="Kleur van de achtergrond van het actieve menu" /> 
+                
+                <field name="FontColorHoverMenu" 
+                       class="" 
+                       type="color" 
+                       default="#ffffff"
+					   label="Kleur Hover Menu"
+					   description="Kleur hover Menu" /> 
+
+                <field name="BgColorHoverMenu" 
+                       class="" 
+                       type="color" 
+                       default="#000000"
+					   label="Achtergrondkleur hover Menu"
+					   description="Kleur van de achtergrond van het hover menu" /> 
+      
+                <field  name="NavFontSize" 
+                        class="" 
+                        type="text" 
+                        default="10px"
+					    label="Fontsize Navigatie"
+                        description="Lettergrootte van Bavigatie" /> 
+                
+                <field  name="Navfont" 
+                        class="" 
+                        type="text" 
+                        default=""
+					    label="Font Navigatie"
+					    description="Font Familie van Navigatie" />
+                              
+            <field      name="NavFontweight" 
+                        class="" 
+                        type="text" 
+                        default=""
+					    label="Gewicht Navigatie"
+				        description="Gewicht van Navigatie" />                 
+                
+            <field      name="Navmargin"
+                        type="text"
+				        default="0 0 10px 0"
+				        label="Margin Navigatie"
+				        description="top - right - bottom - left" />
+ 
+            <field      name="DropDownWidth"
+                        type="text"
+				        default="205"
+				        label="Breedte Dropdown"
+				        description="Breedte van het dropdown Menu" />
+            
+            <field      name="NavChildLeft"
+                        type="text"
+				        default="40px"
+				        label="Nav Child Left"
+				        description="Ruimte links van het dropdown Menu" />
+                
+                            <field      name="NavChildTop"
+                        type="text"
+				        default="100px"
+				        label="Nav Child Top"
+				        description="Ruimte boven van het dropdown Menu" />
+                
+                
+                
+                
+            <field      name="nav_shadow" 
+                        type="radio" 
+                        class="btn-group" 
+                        default="0"
+                        label="Schaduw Navigatie"
+                        description="Zet schaduw aan en uit">
+                        <option value="1">JYES</option>
+                        <option value="0">JNO</option>				
+            </field>   
+                
+            <field      name="nav_sep" 
+                        type="radio" 
+                        class="btn-group" 
+                        default="0"
+                        label="Seperator Navigatie"
+                        description="Zet seperator aan en uit">
+                        <option value="1">JYES</option>
+                        <option value="0">JNO</option>				
+            </field> 
+                <field name="searchinmenu" 
+                       type="radio" 
+                       class="btn-group" 
+                       default="0"
+					   label="Zoeken Navigatie"
+					   description="Zet zoeken aan en uit">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+                                
+                            
+				</field>  
+			</fieldset>
+
+            
+            
+            
+
+<!-- end MENU -->
+			</fields>
+	</config>
+</extension>

@@ -1,0 +1,133 @@
+
+$font-size: 22px;       //font-size
+$bgc_normal: #7F3488;     //kleur achtergrond rondjes
+$bgc: grey;             //kleur hover achtergrond rondjes
+$color: #ffffff;        //kleur iconen
+$height: 40px;          //hoogte rondje
+$width: 40px;           //breedte rondje
+$top: 40px;             //afstand top
+$right:35px;            //afstand tussen rondjes
+
+
+#top2.col-sm-6 {
+    padding-right:0px;
+    left:20px;
+}
+.icon-twitter:before, .icon-facebook:before, .icon-youtube:before, .icon-linkedin:before, .icon-google:before, .icon-instagram:before, .icon-behanced:before {
+    float: right;
+    font-size: $font-size;
+    padding:1px;
+    background-color: $bgc_normal;
+    height:$height;
+    border-radius:50%;
+    width: $width;
+    text-align: center;
+vertical-align: middle;
+line-height: 40px;
+}
+
+.social {
+    float:right;
+    margin-right:$right;
+}
+
+#container_social {
+    height: 100%;
+    float: center;
+    background-color: #ffffff;
+}
+
+.socialrow {
+     float: right; 
+    width:600px;
+}
+
+.twitter {content: "\f099";font-family: 'FontAwesome';}
+.facebook {content: "\f09A";font-family: 'FontAwesome';}
+.youtube {content: "\f167";font-family: 'FontAwesome';}
+.linkedin {content: "\f0E1";font-family: 'FontAwesome';}
+.behanced {content: "\f1b4";font-family: 'FontAwesome';}
+.google {content: "\f0D5";font-family: 'FontAwesome';}
+.instagram {content: "\f16d";font-family: 'FontAwesome';}
+
+.icon-twitter {
+    &:before {
+    color: $color;
+    @extend .twitter;
+    }
+    &:hover:before {
+    background-color: $bgc;
+    @extend .twitter;
+    }
+}
+.icon-facebook {
+    &:before {
+    color: $color;
+    @extend .facebook;
+    }
+    &:hover:before {
+    background-color: $bgc;
+    @extend .facebook;
+    }
+}
+.icon-youtube {
+    margin-right: 0px;
+    &:before {
+    color: $color;
+    @extend .youtube;
+    }
+    &:hover:before {
+    background-color: $bgc;
+    @extend .youtube;
+    }
+}
+.icon-linkedin {
+    &:before {
+    color: $color;
+    @extend .linkedin;
+
+    }
+    &:hover:before {
+    background-color: $bgc;
+    @extend .linkedin;
+    }
+}
+.icon-google {
+    &:before {
+    color: $color;
+    @extend .google;
+    }
+    &:hover:before {
+    background-color: $bgc;
+    @extend .google;
+    }
+}
+.icon-behanced {
+    &:before {
+    @extend .behanced;
+    color: $color;
+    }
+    &:hover:before {
+    @extend .behanced;
+    background-color: $bgc;
+    }
+}
+.icon-instagram {
+    &:before {
+    color: $color;
+    @extend .instagram;
+    }
+    &:hover:before {
+    background-color: $bgc;
+    @extend .instagram;
+    }
+}
+
+
+.wrap_socialbutton {
+    float: right;
+    width: 100%;
+    margin-top: $top;
+    height:60px;
+    @include respond-to(mobile) {margin-top:10px;}
+}

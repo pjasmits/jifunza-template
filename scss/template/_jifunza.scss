@@ -1,0 +1,180 @@
+/*!
+ * Jifunza Template (http://www.byantoinettecommunicatie.nl)
+ * Copyright 2016 Patrick Smits - ByAntoinette Communicatie.
+ * Licensed under GPL v2 (http://www.gnu.org/licenses/gpl-2.0.html)
+ */
+@import "mediaquery";
+
+.adres {
+    padding-left:20px;
+        font-size:16px;
+}
+.well {
+    margin-top:40px;
+}
+
+.contact .well {
+    margin-top:10px;
+}
+div.procedure ul {
+    padding-top:10px;
+}
+
+div.procedure li {
+    font-size:16px;
+    line-height:2;
+}
+.kop {
+    background-color:#5e503f;
+    color:white;
+    padding-left:10px;
+    font-size:20px;
+    padding-top:5px;
+        padding-bottom:5px;
+    margin-bottom:10px;
+}
+
+.voet {
+    background-color:#5e503f;
+    color:white;
+    padding-left:10px;
+    font-size:16px;
+    padding-top:5px;
+        padding-bottom:5px;
+
+}
+
+.item-page a:link, .item-page a:visited {
+    color:#a9927d;
+}
+
+.item-page a:hover {
+    color:#5e503f;
+}
+
+.onderelkaar {
+    width:350px;
+        float:right;
+    position:relative;
+    figcaption {
+          font-style: italic;  
+    }
+}
+.foto {
+    width:350px;
+    float:right;
+    margin-bottom:20px;
+    img {
+    float:right;
+    position:relative;
+    margin-left:30px;
+    padding:5px;
+    border: 1px solid #000000;
+    width:350px;
+    height:100%;
+}
+}
+.home img, .armenzorg img {
+    float:right;
+    position:relative;
+    margin-left:30px;
+    padding:5px;
+    border: 1px solid #000000;
+    width:350px;
+    height:100%;
+}
+
+.donatie-lijst {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom:20px;
+    color:#5e503f;
+    font-size:16px;
+    background-color:#ffffff;
+    border: 1px solid #000000;
+}
+
+.contact  {
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    margin-top:20px;
+    max-height:440px;
+    p {margin-bottom:20px;
+    margin-left:40px;
+    }
+    h3 {margin-left:20px;}
+}
+.kader a:link, .donatie-page a:link  {
+    color:#5e503f;
+    text-decoration:underline!important;
+}
+
+.armenzorg-content, .periode1891-content {
+    max-width:600px;
+}
+.kader, .donatie {
+
+    padding:10px;
+    float:right;
+    border: 1px solid black;
+    width:300px;
+    background-color:#a9927d;
+    margin-left:25px;
+    p {
+      line-height: 1.5;      
+    }
+    h1 {
+        margin:0px!important;
+    }
+
+}
+.page-header {
+    display:none;
+}
+.kop_zeb {
+    float:left;
+}
+
+.sidr ul li a {
+    font-size: 20px !important;
+    font-weight: normal;
+}
+
+.item-page {
+    @include respond-to(tablet) {margin-left:10px;padding-right:10px;} 
+        @include respond-to(mobile) {margin-left:10px;padding-right:10px;} 
+
+}
+
+.navigation {float:left;width:60%;}
+
+.clear {clear:both;}
+
+.nav > li > a {
+    float: left;
+}
+
+.navbar-header {float:left;width:100%;color:black;}
+
+.navbar-form navbar-right {float:left;width:100%;}
+
+* {box-sizing: none;}
+
+body #wrap {padding-top: 0px;}
+
+#brand img {padding: 0px;}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#main {
+    padding-top: 0px !important;
+}
+
+.headertekst {
+    margin-top:20px;
+           @media only screen and (max-width : 320px)  {width:200px;float:left;}
+}

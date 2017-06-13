@@ -1,0 +1,33 @@
+/*!
+ * Jifunza Template (http://www.byantoinettecommunicatie.nl)
+ * Copyright 2016 Patrick Smits - ByAntoinette Communicatie.
+ * Licensed under GPL v2 (http://www.gnu.org/licenses/gpl-2.0.html)
+ */
+
+//exploitatierekening
+@import "template/exploitatierekening";
+
+//mediaquery
+@import "template/mediaquery";
+
+// Variables
+@import "template/variables";
+@import "template/jifunza";
+@import "template/menu";
+
+// Template elements
+@import "template/main";
+@import "template/forms";
+@import "template/chosen";
+
+// User customisations
+@import "template/custom";
+
+// Social Buttons
+@import "template/social_button";
+
+// Jifunza Carousel
+@import "template/carousel";
+
+// bac Visitekaart
+@import "template/bac_visitekaart";

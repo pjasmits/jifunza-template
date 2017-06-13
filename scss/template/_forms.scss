@@ -1,0 +1,83 @@
+//
+// Forms
+// --------------------------------------------------
+
+// Variabel
+$button-color: #7F3488;
+$buttonfont-size: 24px !important;
+$font-size:24px;
+$font-family: 'Open Sans', sans-serif;
+$borderform: 2px solid lightgray !important;
+$boxshadow: none!important;
+$boxborderradius: none!important;
+$maxwidthform: 700px;
+
+.checkbox label, .radio label {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+label,
+input,
+button,
+select,
+textarea {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    font-family: arial;
+}
+label,
+select,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"] {
+	cursor: pointer
+}
+.control-group input, .control-group textarea, .control-group .uneditable-input{/*width: 100% !important */}
+.contact-form .control-group input, .contact-form .control-group textarea, .contact-form .control-group .uneditable-input {
+    width: 100%;
+}
+.email-copy-input {
+	float: left
+}
+.control-group .control-label {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.rsform-block-email, .rsform-block-name {width: 50%; float:left;}
+
+.rsform-block-name {padding-right: 10px;}
+.rsform-input-box, .rsform-text-box {width:100%;}
+
+// Forms
+.control-label, .formRequired {font-size:16px;text-transform: capitalize;	font-weight: 100;font-family: $font-family; font-size:$font-size;padding-top: 15px!important;}
+
+.formControls {margin-top: 5px;}
+
+.rsform-submit-button {background-color: $button-color; border:none; border-radius: 0px !important; font-size: $buttonfont-size;
+    &:hover {background-color:lighten($button-color, 15%);}}
+
+strong.formRequired {
+    font-weight: 100;
+    font-style: normal;
+    margin-left: 5px;}
+
+#userForm {
+    max-width: $maxwidthform;
+    margin: 0 auto;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    border-radius: $boxborderradius;
+    box-shadow: $boxshadow;
+    border: $borderform;
+}
+

@@ -1,0 +1,58 @@
+/* CSS Module visitekaart */
+#bac_visitekaart_module{
+  float: left;
+  width: 250px;
+  height: 350px;
+  border: 1px black solid;
+box-shadow:  2px  2px  2px  1px   grey;  padding-bottom: 10px;
+    margin: 15px;
+}
+
+/* CSS Module extra margin-left to center on a mobile */
+@media (max-width: 368px) {
+	#bac_visitekaart_module{
+  margin-left:25px;
+}
+}
+
+
+/* CSS Image */
+.bac_visitekaart_image {
+  padding: 10px;
+  background-color: lightgrey;
+      display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/* Module boven gelijk */
+.moduletable {
+    padding : 0px;
+}
+
+/* CSS Header */
+.bac_visitekaart_naam {
+  padding: 10px 10px 0px 10px;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  background-color: none;
+  margin: 10px;
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+/* CSS Artikel */
+.bac_visitekaart_adres {
+  padding: 0px 0px 0px 10px;
+  font-size: 14px;
+  color: black;
+  background-color: none;
+  margin: 10px;
+    & a:link {
+   color: black;       
+    }
+}

@@ -1,0 +1,47 @@
+
+$mobile: 320px;
+$tablet: 530px;
+$desktop: 1024px;
+$desktopxl: 1200px;
+
+@mixin respond-to($media) {
+  @if $media == mobile {
+    @media only screen and (max-width: $mobile) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: $mobile + 1) and (max-width: $desktop) { @content; }
+  }
+      @else if $media == desktop {
+    @media only screen and (min-width: $desktop + 1) and (max-width: $desktopxl - 1) { @content; }
+  }
+  @else if $media == desktopxl {
+    @media only screen and (min-width: $desktopxl) { @content; }
+  }
+}
+
+.nomobile {
+    @include respond-to(mobile) {display:none !important;}    
+}
+
+.notablet {
+        @include respond-to(tablet) {display:none !important;}    
+}
+
+.nodesktop {
+    @include respond-to(desktop) {display:none !important;}
+}
+
+.nodesktopxl {
+    @include respond-to(desktopxl) {display:none !important;}
+}
+
+.onlymobile {
+    @include respond-to(tablet) {display:none !important;}    
+    @include respond-to(desktop) {display:none !important;}
+    @include respond-to(desktopxl) {display:none !important;}    
+}
+
+
+// website width 100% on tablet en mobile
+#wrap, #main { @include respond-to(mobile) {width:100% !important;}
+    @include respond-to(tablet) {width:100%!important;} }

@@ -1,0 +1,140 @@
+$colsep: #ffffff;   //kleur van de seperator
+$lh: 1px;           //line height seperator
+
+.dropdown-backdrop {
+    z-index: 0!important;
+}
+
+.menu li.item-115 a:after {
+    content:" ▼";
+}
+
+.menu li.item-117 a:after, .menu li.item-119 a:after, .menu li.item-121 a:after, .menu li.item-123 a:after {
+    content:none;
+}
+
+b.caret {
+    display:none;
+}
+
+.navbar {
+    min-height: 20px!important;
+    z-index:1000;
+}
+
+.nav > li > a {
+    display: block;
+    height: 100%;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    position: relative;
+    @media only screen and (max-width : 320px)   {width:360px!important;overflow:hidden;text-align: left; border-bottom:1px solid #ffffff;}
+}
+
+
+.nav-child {
+   
+background-color: white;
+position:absolute;
+top:50px;
+left:10px;
+z-index:100;
+           @media only screen and (max-width : 320px)   {top:40px!important;
+left:0px!important;height:250px;z-index:none;}
+}
+
+
+.navbar-collapse {
+    margin: 0px;
+    padding: 0px;
+    z-index:10000;
+    height:400px;
+    width:100%;
+}
+
+.navigation {
+    width: 100%;
+	    display: inline-grid;
+    margin: auto;
+}
+
+#top {
+    height: 100px;
+}
+
+#content-above1.col-md-12 {
+    padding: 0px;
+}
+
+#navigation-toggle {
+    right: 60px;
+height:35px;
+}
+// kleur mobile-menu
+.sidr {
+    background-color:#ffffff !important;
+    color:#000000 !important;
+}
+.sidr ul li a {
+    font-size:16px;
+    font-weight: normal;
+    color: gray !important;
+}
+
+
+#left .moduletable {
+    margin-bottom: 0px;
+}
+.sidr-class-toggle-sidr-close {
+    top: 0px;
+}
+
+.sidr-class-current > a {
+    margin-bottom: 0px;
+    height:50px;
+    color:#ffffff !important;
+}
+
+.sidr-class-current {
+    color:#ffffff !important;
+}
+
+
+a.sidr-class-toggle-sidr-close {
+    position: relative;
+//    top: -48px;
+}
+
+#navbar-modules li {
+     float:left;
+    
+}
+
+#navbar-modules ul {
+    float:left;
+    background-color: #5E503F !important;
+}
+
+/*SEPERATOR*/
+#seperator ul li a {
+    display: inline;
+    border-right: 1px solid $colsep;
+    line-height: $lh;
+    margin-top:13px;}
+
+#seperator ul li:last-child a{
+    border: none;
+}
+
+ul.nav.menu {
+    margin: 0 auto;
+       text-align:center;
+}
+
+.affix {
+    position: fixed;
+    top: 0;
+    width:100%;
+}
