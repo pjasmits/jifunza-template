@@ -1,10 +1,11 @@
 <?php
- /*------------------------------------------------------------------------
+/*------------------------------------------------------------------------
 # author    Patrick Smits
-# Copyright © 2016 byAntoinette Communicatie. All rights reserved.
+# copyright © 2017 byAntoinette Communicatie All rights reserved.
 # @license  http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
-# Website   http://www.byantoinettecommunicatie.nl
--------------------------------------------------------------------------*/// no direct access
+# Website   https://www.byantoinettecommunicatie.nl
+-------------------------------------------------------------------------*/
+// no direct access
 	defined('_JEXEC') or die;
 	// Getting params from template
 	$params = JFactory::getApplication()->getTemplate(true)->params;
