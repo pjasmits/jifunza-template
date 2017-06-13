@@ -1,10 +1,11 @@
 <?php
- /*------------------------------------------------------------------------
-# author    Gonzalo Suez
-# Copyright © 2013 gsuez.cl. All rights reserved.
+/*------------------------------------------------------------------------
+# author    Patrick Smits
+# copyright © 2017 byAntoinette Communicatie All rights reserved.
 # @license  http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
-# Website   http://www.gsuez.cl
--------------------------------------------------------------------------*/// no direct access
+# Website   https://www.byantoinettecommunicatie.nl
+-------------------------------------------------------------------------*/
+// no direct access
 defined('_JEXEC') or die;
 JHtml::_('bootstrap.framework');
 ?>
