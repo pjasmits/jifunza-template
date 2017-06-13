@@ -1,0 +1,162 @@
+.heading
+{
+	background: #82358b !important;
+	display: block;
+	padding: 5px;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 0;
+	font-size: 13px;
+	text-transform: lowercase !important;
+	line-height: 24px;
+}
+.sub-heading
+{
+	background: #82358b !important;
+	display: block;
+	padding: 5px;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 0;
+	font-size: 13px;
+	text-transform: lowercase !important;
+	line-height: 24px;
+    width: 425px;
+}
+
+.nav-tabs
+{
+border-bottom: 1px solid #ccc;
+}
+.temp_description 
+{
+border: 2px solid #eee;
+padding: 10px;
+color: #666;
+}
+.tab-content
+{
+border: 2px solid #eee;
+padding: 10px;
+}
+
+
+ul#myTabTabs.nav.nav-tabs:before,
+ul#myTabTabs.nav.nav-tabs:hover:before,
+ul#myTabTabs.nav.nav-tabs a[href="#details"]:before,
+ul#myTabTabs.nav.nav-tabs a[href="#attrib-style"]:before,
+ul#myTabTabs.nav.nav-tabs a[href="#attrib-logo"]:before,
+ul#myTabTabs.nav.nav-tabs a[href="#attrib-mobile"]:before,
+ul#myTabTabs.nav.nav-tabs a[href="#attrib-suffix"]:before,
+ul#myTabTabs.nav.nav-tabs a[href="#attrib-analytics"]:before,
+ul#myTabTabs.nav.nav-tabs a[href="#assignment"]:before {
+
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  line-height: normal;
+  vertical-align: baseline;
+  background-image: none !important;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  position: relative;
+  padding-right: 10px;
+  color: #444;
+  font-size: 11px;
+  text-transform: lowercase;
+}
+
+div#myTabContent .span6 {
+  margin-top: 14px;
+  margin-left: 0;
+  width: 100%;
+}
+ul#myTabTabs.nav.nav-tabs li a {
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 7px 14px;
+  line-height: 24px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  border-radius: 0;
+  background: #ffffff;
+  background: -moz-linear-gradient(top,#ffffff 0%,#ededed 100%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#ffffff),color-stop(100%,#ededed));
+  background: -webkit-linear-gradient(top,#ffffff 0%,#ededed 100%);
+  background: -o-linear-gradient(top,#ffffff 0%,#ededed 100%);
+  background: -ms-linear-gradient(top,#ffffff 0%,#ededed 100%);
+  background: linear-gradient(top,#ffffff 0%,#ededed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#ededed',GradientType=0);
+  color: #82358b;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: none;
+ 
+}
+ul#myTabTabs.nav.nav-tabs li.active a,
+ul#myTabTabs.nav.nav-tabs > li a:hover {
+  background: #82358b;
+  color: #fff;
+  border: 1px solid #eeeeee;
+  border-radius: 0;
+}
+ul#myTabTabs.nav.nav-tabs a:hover:before,
+ul#myTabTabs.nav.nav-tabs li.active a:before {
+  color: #fff;
+  border-radius: 0;
+}
+
+div#myTabContent .control-group hr { border-top: 1px solid #dddddd; border-bottom: 1px solid #ffffff; width: 38em; }
+div#myTabContent .control-label { width: 20em; }
+div#myTabContent textarea { width: 400px; }
+
+@media handheld, only screen and (max-width: 800px) {
+
+  ul#myTabTabs.nav.nav-tabs {
+    border: 0px none;
+  }
+  ul#myTabTabs.nav.nav-tabs > li {
+    float: none;
+  }
+  ul#myTabTabs.nav.nav-tabs li a,
+  ul#myTabTabs.nav.nav-tabs li.active a,
+  ul#myTabTabs.nav.nav-tabs > li a:hover {
+    border-radius: 0;
+  }
+  ul#myTabTabs.nav.nav-tabs li a {
+    background-color: #fff;
+    
+  }
+
+}
+
+ul#myTabTabs {
+    background-image: url('../images/Logo_Jifunza_Template.png');
+    background-repeat: no-repeat;
+    background-color: #f6f6f6;
+    background-position: right;
+    padding-right: 15px;
+}
+
+
+.form-search input, .form-search textarea, .form-search select, .form-search .help-inline, .form-search .uneditable-input, .form-search .input-prepend, .form-search .input-append, .form-inline input, .form-inline textarea, .form-inline select, .form-inline .help-inline, .form-inline .uneditable-input, .form-inline .input-prepend, .form-inline .input-append, .form-horizontal input, .form-horizontal textarea, .form-horizontal select, .form-horizontal .help-inline, .form-horizontal .uneditable-input, .form-horizontal .input-prepend, .form-horizontal .input-append {
+    margin-left: -50px;
+}
+
+.minicolors-theme-bootstrap .minicolors-input {
+    margin-left:-50px;
+}
+
+.minicolors-theme-bootstrap .minicolors-swatch {
+    margin-left: -50px;
+}
+
+.controls > .radio:first-child, .controls > .checkbox:first-child {
+    margin-left: -50px;
+}
+
+.chzn-container-single .chzn-single {
+    margin-left: -50px;
+    width: 210px;
+}
