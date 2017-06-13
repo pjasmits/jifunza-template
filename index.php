@@ -1,9 +1,10 @@
 <?php
-/*!
- * Jifunza Template (http://www.byantoinettecommunicatie.nl)
- * Copyright 2017 Patrick Smits - ByAntoinette Communicatie.
- * Licensed under GPL v2 (http://www.gnu.org/licenses/gpl-2.0.html)
- */
+/*------------------------------------------------------------------------
+# author    Patrick Smits
+# copyright © 2017 byAntoinette Communicatie All rights reserved.
+# @license  http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+# Website   https://www.byantoinettecommunicatie.nl
+-------------------------------------------------------------------------*/
 // no direct access
 
 // Variables
